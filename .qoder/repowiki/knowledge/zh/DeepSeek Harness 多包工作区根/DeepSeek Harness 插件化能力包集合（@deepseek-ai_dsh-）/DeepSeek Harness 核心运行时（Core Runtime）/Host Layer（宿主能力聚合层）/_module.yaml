@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: packages/core_runtime/host_layer
+title: Host Layer（宿主能力聚合层）
+scope:
+    - packages/host/
+source_files: []
+depends_on: []
+related_to: []

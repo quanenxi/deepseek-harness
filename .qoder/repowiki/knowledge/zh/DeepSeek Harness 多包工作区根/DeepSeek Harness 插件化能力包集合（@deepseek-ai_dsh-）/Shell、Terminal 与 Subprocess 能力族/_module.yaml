@@ -1,0 +1,12 @@
+schema_version: 1
+module_path: packages/shell_terminal
+title: Shell、Terminal 与 Subprocess 能力族
+scope:
+    - packages/shell/
+    - packages/terminal/
+    - packages/subprocess/
+source_files: []
+depends_on: []
+related_to:
+    - path: packages/integrations
+    - path: packages/workspace_sandbox

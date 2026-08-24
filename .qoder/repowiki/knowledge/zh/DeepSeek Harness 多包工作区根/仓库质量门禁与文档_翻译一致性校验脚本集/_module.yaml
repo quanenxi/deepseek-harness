@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: scripts
+title: 仓库质量门禁与文档/翻译一致性校验脚本集
+scope:
+    - scripts/
+source_files: []
+depends_on: []
+related_to:
+    - path: packages
+    - path: python_sdk

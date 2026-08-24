@@ -1,0 +1,12 @@
+schema_version: 1
+module_path: packages/interaction_feedback
+title: 交互、反馈与守卫插件集（Interaction/Feedback/Guard）
+scope:
+    - packages/interaction/
+    - packages/feedback/
+    - packages/guard/
+source_files: []
+depends_on: []
+related_to:
+    - path: packages/core_runtime/host_layer/api_proxy
+    - path: packages/shared_libs

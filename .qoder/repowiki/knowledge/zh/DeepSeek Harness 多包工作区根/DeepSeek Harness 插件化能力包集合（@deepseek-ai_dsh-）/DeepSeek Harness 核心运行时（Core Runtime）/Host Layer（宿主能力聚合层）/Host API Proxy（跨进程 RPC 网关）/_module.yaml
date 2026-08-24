@@ -1,0 +1,19 @@
+schema_version: 1
+module_path: packages/core_runtime/host_layer/api_proxy
+title: Host API Proxy（跨进程 RPC 网关）
+scope:
+    - packages/host/apiproxy/
+source_files: []
+depends_on: []
+related_to:
+    - path: packages/context_settings
+    - path: packages/core_runtime/core_default_model_presentation
+    - path: packages/core_runtime/core_session_tools
+    - path: packages/identity_credentials
+    - path: packages/interaction_feedback
+    - path: packages/jobs
+    - path: packages/llm_tools
+    - path: packages/shared_libs
+    - path: packages/subagent
+    - path: packages/workspace_sandbox
+    - path: python_sdk

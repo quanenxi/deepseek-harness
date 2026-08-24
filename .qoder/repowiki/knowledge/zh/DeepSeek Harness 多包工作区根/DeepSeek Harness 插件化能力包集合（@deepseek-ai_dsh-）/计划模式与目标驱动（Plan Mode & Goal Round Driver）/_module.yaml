@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: packages/planning_goal
+title: 计划模式与目标驱动（Plan Mode & Goal Round Driver）
+scope:
+    - packages/plan/
+    - packages/goal/
+source_files: []
+depends_on: []
+related_to:
+    - path: packages/core_runtime/core_session_tools
+    - path: packages/session_persistence

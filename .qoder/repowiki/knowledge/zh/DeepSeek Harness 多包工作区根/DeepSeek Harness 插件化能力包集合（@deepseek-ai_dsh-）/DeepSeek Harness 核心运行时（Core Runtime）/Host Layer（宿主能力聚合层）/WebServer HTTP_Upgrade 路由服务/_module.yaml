@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: packages/core_runtime/host_layer/webserver
+title: WebServer HTTP/Upgrade 路由服务
+scope:
+    - packages/host/webserver/
+source_files: []
+depends_on: []
+related_to:
+    - path: packages/core_runtime/host_layer/frontend_static

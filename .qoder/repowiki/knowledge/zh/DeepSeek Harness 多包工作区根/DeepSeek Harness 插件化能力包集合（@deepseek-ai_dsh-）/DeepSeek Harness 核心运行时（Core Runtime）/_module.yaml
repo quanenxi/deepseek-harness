@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: packages/core_runtime
+title: DeepSeek Harness 核心运行时（Core Runtime）
+scope:
+    - packages/core/
+    - packages/host/
+    - packages/boot/
+source_files: []
+depends_on: []
+related_to:
+    - path: apps/cli

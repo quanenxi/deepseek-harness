@@ -1,0 +1,13 @@
+schema_version: 1
+module_path: packages/context_settings
+title: 上下文、设置与预设（请求上下文扩展、用户配置与每会话 Agent 组合）
+scope:
+    - packages/context/
+    - packages/settings/
+    - packages/preset/
+source_files: []
+depends_on: []
+related_to:
+    - path: packages/core_runtime/host_layer/api_proxy
+    - path: packages/identity_credentials
+    - path: packages/session_persistence

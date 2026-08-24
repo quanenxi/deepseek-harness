@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: packages/identity_credentials
+title: 匿名身份与凭据管理
+scope:
+    - packages/identity/
+    - packages/credentials/
+source_files: []
+depends_on: []
+related_to:
+    - path: packages/context_settings
+    - path: packages/core_runtime/host_layer/api_proxy

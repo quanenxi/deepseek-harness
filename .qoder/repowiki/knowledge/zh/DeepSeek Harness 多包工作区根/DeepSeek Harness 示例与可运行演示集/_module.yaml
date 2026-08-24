@@ -1,0 +1,12 @@
+schema_version: 1
+module_path: examples
+title: DeepSeek Harness 示例与可运行演示集
+scope:
+    - examples/
+source_files: []
+depends_on: []
+related_to:
+    - path: packages/core_runtime/core_agent_loop
+    - path: packages/subagent
+    - path: packages/support_assets
+    - path: python_sdk

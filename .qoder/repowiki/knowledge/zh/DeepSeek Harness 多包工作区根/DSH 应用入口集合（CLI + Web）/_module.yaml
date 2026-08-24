@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: apps
+title: DSH 应用入口集合（CLI + Web）
+scope:
+    - apps/
+source_files: []
+depends_on: []
+related_to: []

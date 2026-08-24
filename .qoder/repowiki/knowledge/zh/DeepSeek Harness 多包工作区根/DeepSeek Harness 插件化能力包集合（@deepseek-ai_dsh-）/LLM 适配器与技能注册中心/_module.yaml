@@ -1,0 +1,13 @@
+schema_version: 1
+module_path: packages/llm_tools
+title: LLM 适配器与技能注册中心
+scope:
+    - packages/llm/
+    - packages/skill/
+source_files: []
+depends_on: []
+related_to:
+    - path: packages/core_runtime/core_session_tools
+    - path: packages/core_runtime/host_layer/api_proxy
+    - path: packages/support_assets
+    - path: packages/workflow_orchestration

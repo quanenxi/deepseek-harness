@@ -1,0 +1,12 @@
+schema_version: 1
+module_path: packages/core_runtime/host_layer/directory_picker
+title: 目录选择器宿主能力层（Directory Picker Host Layer）
+scope:
+    - packages/host/directory-picker/
+    - packages/host/directory-picker-auto/
+    - packages/host/directory-picker-browse/
+    - packages/host/directory-picker-native/
+source_files: []
+depends_on: []
+related_to:
+    - path: apps/web

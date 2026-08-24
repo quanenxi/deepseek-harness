@@ -1,0 +1,33 @@
+schema_version: 1
+module_path: ""
+title: DeepSeek Harness 多包工作区根
+scope:
+    - README.md
+    - CONTRIBUTING.md
+    - .gitignore
+    - pnpm-workspace.yaml
+    - package.json
+    - tsconfig.json
+    - vitest.config.ts
+    - .github/
+    - .agents/
+    - .editorconfig
+    - .gitattributes
+    - .gitlab-ci.yml
+    - .jscpd.json
+    - .oxlintrc.json
+    - .oxlintrc.staged.json
+    - .rgignore
+    - AGENTS.md
+    - BENCHMARK.md
+    - CONTRIBUTING.i18n.yaml
+    - CONTRIBUTING.zh.md
+    - LICENSE
+    - README.i18n.yaml
+    - README.zh.md
+    - THIRD_PARTY_NOTICES.md
+    - knip.json
+    - lefthook.yml
+source_files: []
+depends_on: []
+related_to: []

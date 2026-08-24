@@ -1,0 +1,13 @@
+schema_version: 1
+module_path: packages/integrations
+title: 外部能力集成层（MCP/LSP/E2B/代码运行时）
+scope:
+    - packages/mcp/
+    - packages/lsp/
+    - packages/e2b/
+    - packages/code-runtime/
+source_files: []
+depends_on: []
+related_to:
+    - path: packages/core_runtime/core_session_tools
+    - path: packages/shell_terminal

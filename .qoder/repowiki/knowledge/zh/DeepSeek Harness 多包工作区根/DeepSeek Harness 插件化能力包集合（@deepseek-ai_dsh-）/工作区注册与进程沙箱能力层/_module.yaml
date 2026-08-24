@@ -1,0 +1,13 @@
+schema_version: 1
+module_path: packages/workspace_sandbox
+title: 工作区注册与进程沙箱能力层
+scope:
+    - packages/workspace/
+    - packages/sandbox/
+source_files: []
+depends_on: []
+related_to:
+    - path: native
+    - path: packages/core_runtime/host_layer/api_proxy
+    - path: packages/shared_libs
+    - path: packages/shell_terminal

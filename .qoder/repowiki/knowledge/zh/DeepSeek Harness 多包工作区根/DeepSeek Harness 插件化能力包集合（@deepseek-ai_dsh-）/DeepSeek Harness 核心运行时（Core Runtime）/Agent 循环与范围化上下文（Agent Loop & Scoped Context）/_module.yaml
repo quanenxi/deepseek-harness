@@ -1,0 +1,12 @@
+schema_version: 1
+module_path: packages/core_runtime/core_agent_loop
+title: Agent 循环与范围化上下文（Agent Loop & Scoped Context）
+scope:
+    - packages/core/agent-loop/
+    - packages/core/agent/
+    - packages/core/scope/
+source_files: []
+depends_on: []
+related_to:
+    - path: examples
+    - path: packages/support_assets

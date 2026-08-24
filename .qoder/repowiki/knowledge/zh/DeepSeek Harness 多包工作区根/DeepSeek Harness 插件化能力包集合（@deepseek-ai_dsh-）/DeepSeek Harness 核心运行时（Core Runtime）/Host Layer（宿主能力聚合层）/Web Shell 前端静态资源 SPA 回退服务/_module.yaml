@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: packages/core_runtime/host_layer/frontend_static
+title: Web Shell 前端静态资源 SPA 回退服务
+scope:
+    - packages/host/frontend-static/
+source_files: []
+depends_on: []
+related_to:
+    - path: packages/core_runtime/host_layer/webserver

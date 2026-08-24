@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: packages/jobs
+title: 后台作业（Background Jobs）能力套件
+scope:
+    - packages/jobs/
+source_files: []
+depends_on: []
+related_to:
+    - path: packages/core_runtime/host_layer/api_proxy
+    - path: packages/workflow_orchestration

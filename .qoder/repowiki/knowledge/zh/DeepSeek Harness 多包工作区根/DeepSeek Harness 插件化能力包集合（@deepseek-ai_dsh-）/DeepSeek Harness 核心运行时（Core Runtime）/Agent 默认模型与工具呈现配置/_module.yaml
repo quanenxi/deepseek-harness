@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: packages/core_runtime/core_default_model_presentation
+title: Agent 默认模型与工具呈现配置
+scope:
+    - packages/core/agent-default-model/
+    - packages/core/agent-tool-presentation/
+source_files: []
+depends_on: []
+related_to:
+    - path: packages/core_runtime/host_layer/api_proxy

@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: native
+title: Landlock Run 原生沙箱启动器
+scope:
+    - native/
+source_files: []
+depends_on: []
+related_to:
+    - path: packages/workspace_sandbox

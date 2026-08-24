@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: packages/core_runtime/host_layer/plugin_inventory
+title: Cordis Loader 插件清单只读投影
+scope:
+    - packages/host/plugin-inventory/
+source_files: []
+depends_on: []
+related_to:
+    - path: packages/client_api

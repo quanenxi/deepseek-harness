@@ -1,0 +1,15 @@
+schema_version: 1
+module_path: packages/core_runtime/core_session_tools
+title: 会话、工具与系统提示核心子系统
+scope:
+    - packages/core/session/
+    - packages/core/tools/
+    - packages/core/system-prompt/
+source_files: []
+depends_on: []
+related_to:
+    - path: packages/core_runtime/host_layer/api_proxy
+    - path: packages/integrations
+    - path: packages/llm_tools
+    - path: packages/planning_goal
+    - path: packages/shared_libs

@@ -1,0 +1,19 @@
+schema_version: 1
+module_path: packages/shared_libs
+title: 共享能力家族（util/typert/hooks/fs/storage/spill/compaction）
+scope:
+    - packages/util/
+    - packages/typert/
+    - packages/hooks/
+    - packages/fs/
+    - packages/storage/
+    - packages/spill/
+    - packages/compaction/
+source_files: []
+depends_on: []
+related_to:
+    - path: packages/core_runtime/core_session_tools
+    - path: packages/core_runtime/host_layer/api_proxy
+    - path: packages/interaction_feedback
+    - path: packages/session_persistence
+    - path: packages/workspace_sandbox

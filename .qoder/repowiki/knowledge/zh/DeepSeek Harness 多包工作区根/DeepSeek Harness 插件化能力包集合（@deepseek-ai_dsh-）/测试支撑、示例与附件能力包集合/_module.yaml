@@ -1,0 +1,15 @@
+schema_version: 1
+module_path: packages/support_assets
+title: 测试支撑、示例与附件能力包集合
+scope:
+    - packages/test-support/
+    - packages/examples/
+    - packages/attachment/
+    - packages/runtime-diagnostics/
+source_files: []
+depends_on: []
+related_to:
+    - path: examples
+    - path: packages/core_runtime/core_agent_loop
+    - path: packages/llm_tools
+    - path: packages/session_persistence

@@ -1,0 +1,13 @@
+schema_version: 1
+module_path: packages/session_persistence
+title: 会话持久化与衍生服务（持久化、投影、标题、遥测）
+scope:
+    - packages/session/
+source_files: []
+depends_on: []
+related_to:
+    - path: packages/context_settings
+    - path: packages/planning_goal
+    - path: packages/shared_libs
+    - path: packages/support_assets
+    - path: packages/workflow_orchestration

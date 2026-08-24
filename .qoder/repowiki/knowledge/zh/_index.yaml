@@ -1,0 +1,527 @@
+# 知识卡导出索引文件
+schema_version: 1
+locale: zh-CN
+branch: master
+nodes_managed: true
+exported_at: "2026-08-17T02:50:38Z"
+modules:
+    "":
+        dir_name: DeepSeek Harness 多包工作区根
+        title: DeepSeek Harness 多包工作区根
+        scope:
+            - README.md
+            - CONTRIBUTING.md
+            - .gitignore
+            - pnpm-workspace.yaml
+            - package.json
+            - tsconfig.json
+            - vitest.config.ts
+            - .github/
+            - .agents/
+            - .editorconfig
+            - .gitattributes
+            - .gitlab-ci.yml
+            - .jscpd.json
+            - .oxlintrc.json
+            - .oxlintrc.staged.json
+            - .rgignore
+            - AGENTS.md
+            - BENCHMARK.md
+            - CONTRIBUTING.i18n.yaml
+            - CONTRIBUTING.zh.md
+            - LICENSE
+            - README.i18n.yaml
+            - README.zh.md
+            - THIRD_PARTY_NOTICES.md
+            - knip.json
+            - lefthook.yml
+        source_files: []
+        children:
+            - apps
+            - docs
+            - examples
+            - native
+            - packages
+            - python_sdk
+            - scripts
+            - website
+        depends_on: []
+        related_to: []
+    apps:
+        dir_name: DSH 应用入口集合（CLI + Web）
+        title: DSH 应用入口集合（CLI + Web）
+        scope:
+            - apps/
+        source_files: []
+        children:
+            - apps/cli
+            - apps/web
+        depends_on: []
+        related_to: []
+    apps/cli:
+        dir_name: dsh CLI 入口与配置编排
+        title: dsh CLI 入口与配置编排
+        scope:
+            - apps/cli/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages/core_runtime
+            - path: packages/core_runtime/boot_process
+    apps/web:
+        dir_name: Web 前端应用入口与 E2E 测试套件
+        title: Web 前端应用入口与 E2E 测试套件
+        scope:
+            - apps/web/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages/client_api
+            - path: packages/core_runtime/host_layer/directory_picker
+    docs:
+        dir_name: DeepSeek Harness 多语言文档体系
+        title: DeepSeek Harness 多语言文档体系
+        scope:
+            - docs/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: website
+    examples:
+        dir_name: DeepSeek Harness 示例与可运行演示集
+        title: DeepSeek Harness 示例与可运行演示集
+        scope:
+            - examples/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages/core_runtime/core_agent_loop
+            - path: packages/subagent
+            - path: packages/support_assets
+            - path: python_sdk
+    native:
+        dir_name: Landlock Run 原生沙箱启动器
+        title: Landlock Run 原生沙箱启动器
+        scope:
+            - native/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages/workspace_sandbox
+    packages:
+        dir_name: DeepSeek Harness 插件化能力包集合（@deepseek-ai_dsh-）
+        title: DeepSeek Harness 插件化能力包集合（@deepseek-ai/dsh-*）
+        scope:
+            - packages/
+        source_files: []
+        children:
+            - packages/client_api
+            - packages/context_settings
+            - packages/core_runtime
+            - packages/identity_credentials
+            - packages/integrations
+            - packages/interaction_feedback
+            - packages/jobs
+            - packages/llm_tools
+            - packages/planning_goal
+            - packages/session_persistence
+            - packages/shared_libs
+            - packages/shell_terminal
+            - packages/subagent
+            - packages/support_assets
+            - packages/workflow_orchestration
+            - packages/workspace_sandbox
+        depends_on: []
+        related_to:
+            - path: scripts
+    packages/client_api:
+        dir_name: 客户端 API、Web 能力与 SDK 运行时
+        title: 客户端 API、Web 能力与 SDK 运行时
+        scope:
+            - packages/client/
+            - packages/api/
+            - packages/web/
+            - packages/sdk/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: apps/web
+            - path: packages/core_runtime/host_layer/plugin_inventory
+    packages/context_settings:
+        dir_name: 上下文、设置与预设（请求上下文扩展、用户配置与每会话 Agent 组合）
+        title: 上下文、设置与预设（请求上下文扩展、用户配置与每会话 Agent 组合）
+        scope:
+            - packages/context/
+            - packages/settings/
+            - packages/preset/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages/core_runtime/host_layer/api_proxy
+            - path: packages/identity_credentials
+            - path: packages/session_persistence
+    packages/core_runtime:
+        dir_name: DeepSeek Harness 核心运行时（Core Runtime）
+        title: DeepSeek Harness 核心运行时（Core Runtime）
+        scope:
+            - packages/core/
+            - packages/host/
+            - packages/boot/
+        source_files: []
+        children:
+            - packages/core_runtime/boot_process
+            - packages/core_runtime/core_agent_loop
+            - packages/core_runtime/core_default_model_presentation
+            - packages/core_runtime/core_session_tools
+            - packages/core_runtime/host_layer
+        depends_on: []
+        related_to:
+            - path: apps/cli
+    packages/core_runtime/boot_process:
+        dir_name: 应用启动与命令行桥接（app-boot & cmdline）
+        title: 应用启动与命令行桥接（app-boot & cmdline）
+        scope:
+            - packages/boot/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: apps/cli
+    packages/core_runtime/core_agent_loop:
+        dir_name: Agent 循环与范围化上下文（Agent Loop & Scoped Context）
+        title: Agent 循环与范围化上下文（Agent Loop & Scoped Context）
+        scope:
+            - packages/core/agent-loop/
+            - packages/core/agent/
+            - packages/core/scope/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: examples
+            - path: packages/support_assets
+    packages/core_runtime/core_default_model_presentation:
+        dir_name: Agent 默认模型与工具呈现配置
+        title: Agent 默认模型与工具呈现配置
+        scope:
+            - packages/core/agent-default-model/
+            - packages/core/agent-tool-presentation/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages/core_runtime/host_layer/api_proxy
+    packages/core_runtime/core_session_tools:
+        dir_name: 会话、工具与系统提示核心子系统
+        title: 会话、工具与系统提示核心子系统
+        scope:
+            - packages/core/session/
+            - packages/core/tools/
+            - packages/core/system-prompt/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages/core_runtime/host_layer/api_proxy
+            - path: packages/integrations
+            - path: packages/llm_tools
+            - path: packages/planning_goal
+            - path: packages/shared_libs
+    packages/core_runtime/host_layer:
+        dir_name: Host Layer（宿主能力聚合层）
+        title: Host Layer（宿主能力聚合层）
+        scope:
+            - packages/host/
+        source_files: []
+        children:
+            - packages/core_runtime/host_layer/api_proxy
+            - packages/core_runtime/host_layer/directory_picker
+            - packages/core_runtime/host_layer/frontend_static
+            - packages/core_runtime/host_layer/plugin_inventory
+            - packages/core_runtime/host_layer/webserver
+        depends_on: []
+        related_to: []
+    packages/core_runtime/host_layer/api_proxy:
+        dir_name: Host API Proxy（跨进程 RPC 网关）
+        title: Host API Proxy（跨进程 RPC 网关）
+        scope:
+            - packages/host/apiproxy/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages/context_settings
+            - path: packages/core_runtime/core_default_model_presentation
+            - path: packages/core_runtime/core_session_tools
+            - path: packages/identity_credentials
+            - path: packages/interaction_feedback
+            - path: packages/jobs
+            - path: packages/llm_tools
+            - path: packages/shared_libs
+            - path: packages/subagent
+            - path: packages/workspace_sandbox
+            - path: python_sdk
+    packages/core_runtime/host_layer/directory_picker:
+        dir_name: 目录选择器宿主能力层（Directory Picker Host Layer）
+        title: 目录选择器宿主能力层（Directory Picker Host Layer）
+        scope:
+            - packages/host/directory-picker/
+            - packages/host/directory-picker-auto/
+            - packages/host/directory-picker-browse/
+            - packages/host/directory-picker-native/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: apps/web
+    packages/core_runtime/host_layer/frontend_static:
+        dir_name: Web Shell 前端静态资源 SPA 回退服务
+        title: Web Shell 前端静态资源 SPA 回退服务
+        scope:
+            - packages/host/frontend-static/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages/core_runtime/host_layer/webserver
+    packages/core_runtime/host_layer/plugin_inventory:
+        dir_name: Cordis Loader 插件清单只读投影
+        title: Cordis Loader 插件清单只读投影
+        scope:
+            - packages/host/plugin-inventory/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages/client_api
+    packages/core_runtime/host_layer/webserver:
+        dir_name: WebServer HTTP_Upgrade 路由服务
+        title: WebServer HTTP/Upgrade 路由服务
+        scope:
+            - packages/host/webserver/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages/core_runtime/host_layer/frontend_static
+    packages/identity_credentials:
+        dir_name: 匿名身份与凭据管理
+        title: 匿名身份与凭据管理
+        scope:
+            - packages/identity/
+            - packages/credentials/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages/context_settings
+            - path: packages/core_runtime/host_layer/api_proxy
+    packages/integrations:
+        dir_name: 外部能力集成层（MCP_LSP_E2B_代码运行时）
+        title: 外部能力集成层（MCP/LSP/E2B/代码运行时）
+        scope:
+            - packages/mcp/
+            - packages/lsp/
+            - packages/e2b/
+            - packages/code-runtime/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages/core_runtime/core_session_tools
+            - path: packages/shell_terminal
+    packages/interaction_feedback:
+        dir_name: 交互、反馈与守卫插件集（Interaction_Feedback_Guard）
+        title: 交互、反馈与守卫插件集（Interaction/Feedback/Guard）
+        scope:
+            - packages/interaction/
+            - packages/feedback/
+            - packages/guard/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages/core_runtime/host_layer/api_proxy
+            - path: packages/shared_libs
+    packages/jobs:
+        dir_name: 后台作业（Background Jobs）能力套件
+        title: 后台作业（Background Jobs）能力套件
+        scope:
+            - packages/jobs/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages/core_runtime/host_layer/api_proxy
+            - path: packages/workflow_orchestration
+    packages/llm_tools:
+        dir_name: LLM 适配器与技能注册中心
+        title: LLM 适配器与技能注册中心
+        scope:
+            - packages/llm/
+            - packages/skill/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages/core_runtime/core_session_tools
+            - path: packages/core_runtime/host_layer/api_proxy
+            - path: packages/support_assets
+            - path: packages/workflow_orchestration
+    packages/planning_goal:
+        dir_name: 计划模式与目标驱动（Plan Mode & Goal Round Driver）
+        title: 计划模式与目标驱动（Plan Mode & Goal Round Driver）
+        scope:
+            - packages/plan/
+            - packages/goal/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages/core_runtime/core_session_tools
+            - path: packages/session_persistence
+    packages/session_persistence:
+        dir_name: 会话持久化与衍生服务（持久化、投影、标题、遥测）
+        title: 会话持久化与衍生服务（持久化、投影、标题、遥测）
+        scope:
+            - packages/session/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages/context_settings
+            - path: packages/planning_goal
+            - path: packages/shared_libs
+            - path: packages/support_assets
+            - path: packages/workflow_orchestration
+    packages/shared_libs:
+        dir_name: 共享能力家族（util_typert_hooks_fs_storage_spill_compaction）
+        title: 共享能力家族（util/typert/hooks/fs/storage/spill/compaction）
+        scope:
+            - packages/util/
+            - packages/typert/
+            - packages/hooks/
+            - packages/fs/
+            - packages/storage/
+            - packages/spill/
+            - packages/compaction/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages/core_runtime/core_session_tools
+            - path: packages/core_runtime/host_layer/api_proxy
+            - path: packages/interaction_feedback
+            - path: packages/session_persistence
+            - path: packages/workspace_sandbox
+    packages/shell_terminal:
+        dir_name: Shell、Terminal 与 Subprocess 能力族
+        title: Shell、Terminal 与 Subprocess 能力族
+        scope:
+            - packages/shell/
+            - packages/terminal/
+            - packages/subprocess/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages/integrations
+            - path: packages/workspace_sandbox
+    packages/subagent:
+        dir_name: 子代理（Subagent）能力接缝与多后端实现
+        title: 子代理（Subagent）能力接缝与多后端实现
+        scope:
+            - packages/subagent/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: examples
+            - path: packages/core_runtime/host_layer/api_proxy
+            - path: packages/workflow_orchestration
+            - path: python_sdk
+    packages/support_assets:
+        dir_name: 测试支撑、示例与附件能力包集合
+        title: 测试支撑、示例与附件能力包集合
+        scope:
+            - packages/test-support/
+            - packages/examples/
+            - packages/attachment/
+            - packages/runtime-diagnostics/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: examples
+            - path: packages/core_runtime/core_agent_loop
+            - path: packages/llm_tools
+            - path: packages/session_persistence
+    packages/workflow_orchestration:
+        dir_name: 工作流编排与定时提醒子系统
+        title: 工作流编排与定时提醒子系统
+        scope:
+            - packages/workflow/
+            - packages/schedule/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages/jobs
+            - path: packages/llm_tools
+            - path: packages/session_persistence
+            - path: packages/subagent
+    packages/workspace_sandbox:
+        dir_name: 工作区注册与进程沙箱能力层
+        title: 工作区注册与进程沙箱能力层
+        scope:
+            - packages/workspace/
+            - packages/sandbox/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: native
+            - path: packages/core_runtime/host_layer/api_proxy
+            - path: packages/shared_libs
+            - path: packages/shell_terminal
+    python_sdk:
+        dir_name: DeepSeek Harness Python SDK 与运行时绑定
+        title: DeepSeek Harness Python SDK 与运行时绑定
+        scope:
+            - python/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: examples
+            - path: packages/core_runtime/host_layer/api_proxy
+            - path: packages/subagent
+            - path: scripts
+    scripts:
+        dir_name: 仓库质量门禁与文档_翻译一致性校验脚本集
+        title: 仓库质量门禁与文档/翻译一致性校验脚本集
+        scope:
+            - scripts/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: packages
+            - path: python_sdk
+    website:
+        dir_name: DeepSeek Harness 文档站点（VitePress）
+        title: DeepSeek Harness 文档站点（VitePress）
+        scope:
+            - website/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: docs

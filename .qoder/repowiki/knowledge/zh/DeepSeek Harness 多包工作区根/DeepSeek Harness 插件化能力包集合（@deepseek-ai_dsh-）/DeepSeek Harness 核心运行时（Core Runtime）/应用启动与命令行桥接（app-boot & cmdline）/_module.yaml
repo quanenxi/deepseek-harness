@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: packages/core_runtime/boot_process
+title: 应用启动与命令行桥接（app-boot & cmdline）
+scope:
+    - packages/boot/
+source_files: []
+depends_on: []
+related_to:
+    - path: apps/cli
